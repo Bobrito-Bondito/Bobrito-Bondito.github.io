@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Italian Brainrot</title>
+    <title>Викторина</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-Balerina Capuccina
+<div id="start-screen" class="flex">
+    <h5>Реклама</h5>
+    <button id="start-button">▶️ Викторина</button>
+    <h5>Реклама</h5>
+</div>
+
+<div id="quiz-container" class="hidden">
+    <div id="top-bar">
+        <div id="question-text"></div>
+        <div id="timer">00:00</div>
+    </div>
+    <div id="image-grid"></div>
+</div>
+
+<div id="result-screen" class="hidden">
+    <h2>Результат</h2>
+    <p id="result-score"></p>
+    <p id="result-time"></p>
+    <button onclick="location.reload()">Вернуться на главную</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
