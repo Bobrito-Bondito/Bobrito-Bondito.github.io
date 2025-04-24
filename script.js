@@ -51,6 +51,24 @@ startButton.addEventListener("click", () => {
     showQuestion();
 });
 
+window.addEventListener("load", () => {
+    preloadAssets();
+});
+
+
+function preloadAssets() {
+    items.forEach(item => {
+        // Предзагрузка изображения
+        const img = new Image();
+        img.src = item.image;
+
+        // Предзагрузка звука
+        const audio = new Audio();
+        audio.src = item.sound;
+        audio.preload = "auto";
+    });
+}
+
 function generateQuestions(count = 5) {
     const usedIndices = new Set();
     const result = [];
@@ -84,6 +102,8 @@ function showQuestion() {
     questionText.textContent = q.text;
 
     const audio = new Audio(q.sound);
+    const audio_success = new Audio("assets/sounds/success.mp3");
+    const audio_error = new Audio("assets/sounds/error.mp3");
     audio.play();
 
     imageGrid.innerHTML = "";
@@ -95,6 +115,7 @@ function showQuestion() {
         img.classList.add("image-option");
 
         img.addEventListener("click", () => {
+            audio.pause()
             const isCorrect = imgSrc === q.correctImage;
             img.classList.add(isCorrect ? "correct" : "wrong");
 
@@ -103,10 +124,16 @@ function showQuestion() {
                 option.style.pointerEvents = "none";
             });
 
-            if (isCorrect) score++;
+            if (isCorrect) {
+                score++;
+                audio_success.play();
+            } else {
+                audio_error.play();
+            }
 
             setTimeout(() => {
-                audio.pause()
+                audio_success.pause()
+                audio_error.pause()
                 currentQuestion++;
                 if (currentQuestion < shuffledQuestions.length) {
                     showQuestion();
