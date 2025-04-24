@@ -1,12 +1,12 @@
 const items = [
-    { text: "Tralalero Tralala", image: "assets/images/1.webp", sound: "" },
-    { text: "Trippi Troppi", image: "assets/images/2.webp", sound: "" },
-    { text: "Tung tung tung sahur", image: "assets/images/3.webp", sound: "" },
-    { text: "Ballerina Cappuccina", image: "assets/images/4.webp", sound: "" },
-    { text: "Bombombini Gusini", image: "assets/images/5.webp", sound: "" },
-    { text: "Brr brr Patapim", image: "assets/images/6.webp", sound: "" },
-    { text: "Capuchino Assassino", image: "assets/images/7.webp", sound: "" },
-    { text: "Lirilì Larilà", image: "assets/images/8.webp", sound: "" },
+    { text: "Tralalero Tralala", image: "assets/images/1.webp", sound: "assets/sounds/1.mp3" },
+    { text: "Trippi Troppi Troppa Trippa", image: "assets/images/2.webp", sound: "assets/sounds/2.mp3" },
+    { text: "Tung tung tung sahur", image: "assets/images/3.webp", sound: "assets/sounds/3.mp3" },
+    { text: "Ballerina Cappuccina", image: "assets/images/4.webp", sound: "assets/sounds/4.mp3" },
+    { text: "Bombombini Gusini", image: "assets/images/5.webp", sound: "assets/sounds/5.mp3" },
+    { text: "Brr brr Patapim", image: "assets/images/6.webp", sound: "assets/sounds/6.mp3" },
+    { text: "Capuchino Assassino", image: "assets/images/7.webp", sound: "assets/sounds/7.mp3" },
+    { text: "Lirilì Larilà", image: "assets/images/8.webp", sound: "assets/sounds/8.mp3" },
 ];
 
 let questions = [];
