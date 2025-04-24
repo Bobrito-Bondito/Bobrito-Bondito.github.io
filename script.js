@@ -7,6 +7,17 @@ const items = [
     { text: "Brr brr Patapim", image: "assets/images/6.webp", sound: "assets/sounds/6.mp3" },
     { text: "Capuchino Assassino", image: "assets/images/7.webp", sound: "assets/sounds/7.mp3" },
     { text: "Lirilì Larilà", image: "assets/images/8.webp", sound: "assets/sounds/8.mp3" },
+    { text: "Bobritto bandito", image: "assets/images/9.webp", sound: "assets/sounds/9.mp3" },
+    { text: "Bombardiro Crocodillo", image: "assets/images/10.webp", sound: "assets/sounds/10.mp3" },
+    { text: "La Vaca Saturno Saturnita", image: "assets/images/11.webp", sound: "assets/sounds/11.mp3" },
+    { text: "Boneca Ambalabu", image: "assets/images/12.webp", sound: "assets/sounds/12.mp3" },
+    { text: "Chimpanzini Bananini", image: "assets/images/13.webp", sound: "assets/sounds/13.mp3" },
+    { text: "Frigo Camelo", image: "assets/images/14.webp", sound: "assets/sounds/14.mp3" },
+    { text: "U Din Din Din Din Dun Ma Din Din Din Dun", image: "assets/images/15.webp", sound: "assets/sounds/15.mp3" },
+    { text: "Trulimero Trulicina", image: "assets/images/16.webp", sound: "assets/sounds/16.mp3" },
+    { text: "Garamaraman dan Madudungdung tak tuntung perkuntung", image: "assets/images/17.webp", sound: "assets/sounds/17.mp3" },
+    { text: "Girafa Celestre Viaggio Agreste", image: "assets/images/18.webp", sound: "assets/sounds/18.mp3" },
+    { text: "Trippa Troppa Tralala Lirilì Rilà Tung Tung Sahur Boneca Tung Tung Tralalelo Trippi Troppa Crocodina", image: "assets/images/19.webp", sound: "assets/sounds/19.mp3" },
 ];
 
 let questions = [];
@@ -72,10 +83,8 @@ function showQuestion() {
     const q = shuffledQuestions[currentQuestion];
     questionText.textContent = q.text;
 
-    if (q.sound) {
-        const audio = new Audio(q.sound);
-        audio.play();
-    }
+    const audio = new Audio(q.sound);
+    audio.play();
 
     imageGrid.innerHTML = "";
     const allImages = shuffleArray([q.correctImage, ...q.incorrectImages]);
@@ -97,6 +106,7 @@ function showQuestion() {
             if (isCorrect) score++;
 
             setTimeout(() => {
+                audio.pause()
                 currentQuestion++;
                 if (currentQuestion < shuffledQuestions.length) {
                     showQuestion();
