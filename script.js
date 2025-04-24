@@ -28,7 +28,7 @@ const items = [
     { text: "Pussini Sushini", image: "assets/images/27.webp", sound: "assets/sounds/27.mp3" },
     { text: "Pipi Potato", image: "assets/images/28.webp", sound: "assets/sounds/28.mp3" },
     { text: "Crocodillo Potato Submarino", image: "assets/images/29.webp", sound: "assets/sounds/29.mp3" },
-    { text: "Crocodildo Taxiccino", image: "assets/images/29.webp", sound: "assets/sounds/29.mp3" },
+    { text: "Crocodildo Taxiccino", image: "assets/images/30.webp", sound: "assets/sounds/30.mp3" },
 ];
 
 let questions = [];
