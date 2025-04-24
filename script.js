@@ -42,7 +42,7 @@ startButton.addEventListener("click", () => {
     startScreen.classList.add("hidden");
     quizContainer.classList.remove("hidden");
     quizContainer.classList.add("flex");
-    questions = generateQuestions(5); // Сколько хочешь вопросов
+    questions = generateQuestions(10); // Сколько хочешь вопросов
     shuffledQuestions = shuffleArray(questions);
     currentQuestion = 0;
     score = 0;
