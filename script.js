@@ -23,6 +23,12 @@ const items = [
     { text: "Bluberini Octopusini", image: "assets/images/22.webp", sound: "assets/sounds/22.mp3" },
     { text: "Tric Trac baraboom", image: "assets/images/23.webp", sound: "assets/sounds/23.mp3" },
     { text: "Frulli Frulla", image: "assets/images/24.webp", sound: "assets/sounds/24.mp3" },
+    { text: "Unta tobi tob tob", image: "assets/images/25.webp", sound: "assets/sounds/25.mp3" },
+    { text: "Chimpanzini Cocosini", image: "assets/images/26.webp", sound: "assets/sounds/26.mp3" },
+    { text: "Pussini Sushini", image: "assets/images/27.webp", sound: "assets/sounds/27.mp3" },
+    { text: "Pipi Potato", image: "assets/images/28.webp", sound: "assets/sounds/28.mp3" },
+    { text: "Crocodillo Potato Submarino", image: "assets/images/29.webp", sound: "assets/sounds/29.mp3" },
+    { text: "Crocodildo Taxiccino", image: "assets/images/29.webp", sound: "assets/sounds/29.mp3" },
 ];
 
 let questions = [];
