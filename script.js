@@ -18,6 +18,11 @@ const items = [
     { text: "Garamaraman dan Madudungdung tak tuntung perkuntung", image: "assets/images/17.webp", sound: "assets/sounds/17.mp3" },
     { text: "Girafa Celestre Viaggio Agreste", image: "assets/images/18.webp", sound: "assets/sounds/18.mp3" },
     { text: "Trippa Troppa Tralala Lirilì Rilà Tung Tung Sahur Boneca Tung Tung Tralalelo Trippi Troppa Crocodina", image: "assets/images/19.webp", sound: "assets/sounds/19.mp3" },
+    { text: "Spijuniro Golubiro", image: "assets/images/20.webp", sound: "assets/sounds/20.mp3" },
+    { text: "Piccione Macchina", image: "assets/images/21.webp", sound: "assets/sounds/21.mp3" },
+    { text: "Bluberini Octopusini", image: "assets/images/22.webp", sound: "assets/sounds/22.mp3" },
+    { text: "Tric Trac baraboom", image: "assets/images/23.webp", sound: "assets/sounds/23.mp3" },
+    { text: "Frulli Frulla", image: "assets/images/24.webp", sound: "assets/sounds/24.mp3" },
 ];
 
 let questions = [];
