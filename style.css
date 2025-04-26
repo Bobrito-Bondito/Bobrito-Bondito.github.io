@@ -100,7 +100,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     padding: 16px;
-    height: calc(100% - 120px); /* отнимаем высоту top-bar и отступы */
+    height: calc(100% - 120px - 20%); /* отнимаем высоту top-bar и отступы */
     aspect-ratio: 1 / 1; /* сохраняем квадратность всей сетки */
     width: auto; /* ширина будет подстраиваться по высоте */
 }
