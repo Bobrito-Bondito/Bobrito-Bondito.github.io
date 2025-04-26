@@ -159,6 +159,13 @@ function showQuestion() {
 }
 
 function endQuiz() {
+    window.yaContextCb.push(() => {
+        Ya.Context.AdvManager.render({
+            "blockId": "R-A-15239649-4",
+            "type": "fullscreen",
+            "platform": "touch"
+        })
+    })
     clearInterval(timerInterval);
     quizContainer.classList.remove("flex");
     quizContainer.classList.add("hidden");
